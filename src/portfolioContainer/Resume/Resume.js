@@ -54,7 +54,7 @@ const Resume = (props) => {
 
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 90 },
-    { skill: "React JS", ratingPercentage: 85 },
+    { skill: "React JS", ratingPercentage: 90 },
     { skill: "Express JS", ratingPercentage: 85 },
     { skill: "Node JS", ratingPercentage: 88 },
     { skill: "Mongo Db", ratingPercentage: 70 },
@@ -62,6 +62,7 @@ const Resume = (props) => {
     { skill: "C", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
+    { skill: "Tailwind CSS", ratingPercentage: 90 },
   ];
 
   const projectsDetails = [
@@ -80,14 +81,30 @@ const Resume = (props) => {
       subHeading:
         "Technologies Used: React Js",
     },
+    {
+      title: "aPC WebWorks",
+      duration: { fromDate: "2023", toDate: "2023" },
+      description:
+        "Developed responsive and accessible web pages to ensure optimal user experience across devices and browsers .Designed and implemented the website's user interface (UI) using modern web technologies.",
+      subHeading:
+        "Technologies Used:  HTML,CSS,JavaScript, MongoDB,React js,Node js,Tailwind CSS.",
+    },
+    {
+      title: "WanderWay",
+      duration: { fromDate: "2023", toDate: "2023" },
+      description:
+        "Leveraged expertise in developing and managing an innovative online ticket booking platform.",
+      subHeading:
+        "Technologies Used:  HTML,CSS,JavaScript, MongoDB,React js,Node js.",
+    },
    
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"Bachelor of bussiness administration(computer application)"}
-        subHeading={"Dr. D Y Patil ACS College pimpri 411018 "}
+        heading={"Dr. D Y Patil ACS College pimpri 411018 "}
+        subHeading={"Bachelor of bussiness administration(computer application)"}
         fromDate={"2019"}
         toDate={"2022"}
       />
@@ -96,7 +113,7 @@ const Resume = (props) => {
         heading={"Frond End Development"}
         subHeading={"Bitcode institute"}
         fromDate={"2022"}
-        toDate={"present"}
+        toDate={"2022"}
       />
       <ResumeHeading
         heading={"senior secondary(XII)"}
@@ -110,16 +127,19 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"worked on Project"}
+          heading={"Bitcode Technology"}
          
-          fromDate={"2021"}
-          toDate={"Present"}
+          fromDate={"2022"}
+          toDate={"2023"}
         />
       
         <div className="experience-description">
           <span className="resume-description-text">
             - Developed an  Shopping Cart  for ecommerce website with for
             managing the products,add more no of products etc. .
+          </span><br/>
+          <span className="resume-description-text">
+            - Also  work on  winder Way project which is online ticket booking system.
           </span><br/>
           <span className="resume-description-text">
             - Developed an  Portfolio Website with for
